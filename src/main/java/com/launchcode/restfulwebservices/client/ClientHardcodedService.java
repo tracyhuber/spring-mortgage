@@ -10,13 +10,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class ClientHardcodedService {
 	
-	private static List<Client> clients = new ArrayList();
+	private static List<Client> clients = new ArrayList<>();
 	private static int idCounter = 0;
 	
 	static {
-		clients.add(new Client(++idCounter, "Tracy Huber", "Purchase", new Date(), false ));
-		clients.add(new Client(++idCounter, "Micky Mouse", "Prospect", new Date(), false ));
-		clients.add(new Client(++idCounter, "Led Zeplin", "Refinance", new Date(), false ));
+		clients.add(new Client(++idCounter, "Tracy", "Purchase", new Date(), false ));
+		clients.add(new Client(++idCounter, "Micky", "Prospect", new Date(), false ));
+		clients.add(new Client(++idCounter, "Zeplin", "Refinance", new Date(), false ));
 		
 	}
 	

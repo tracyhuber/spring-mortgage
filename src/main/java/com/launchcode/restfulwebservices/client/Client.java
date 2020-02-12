@@ -79,7 +79,5 @@ public class Client {
 			return false;
 		return true;
 	}
-	
-	
 
 }

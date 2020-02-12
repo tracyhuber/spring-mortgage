@@ -24,7 +24,6 @@ public class ClientResource {
 		return clientService.findAll();
 	}
 
-	//DELETE /users/{username}/clients/{id}
 	@DeleteMapping("/users/{username}/clients/{id}")
 	public ResponseEntity<Void> deleteClient(@PathVariable String username, @PathVariable long id) {
 		Client client = clientService.deleteById(id);
