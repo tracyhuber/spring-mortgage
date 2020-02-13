@@ -24,6 +24,12 @@ public class ClientResource {
 		return clientService.findAll();
 	}
 
+	@GetMapping("/users/{username}/clients/{id}")
+	public Client getClient(@PathVariable String username, @PathVariable long id) {
+		return clientService.findById(id);
+	}
+
+	
 	@DeleteMapping("/users/{username}/clients/{id}")
 	public ResponseEntity<Void> deleteClient(@PathVariable String username, @PathVariable long id) {
 		Client client = clientService.deleteById(id);
