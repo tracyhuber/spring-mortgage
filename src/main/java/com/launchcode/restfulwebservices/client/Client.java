@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Client {
 	private long id;
-	private String username;
+	private String clientName;
 	private String description;
 	private Date targetDate;
 	private boolean isDone;
@@ -13,10 +13,10 @@ public class Client {
 		
 	}
 
-	public Client(long id, String username, String description, Date targetDate, boolean isDone) {
+	public Client(long id, String clientName, String description, Date targetDate, boolean isDone) {
 		super();
 		this.id = id;
-		this.username = username;
+		this.clientName = clientName;
 		this.description = description;
 		this.targetDate = targetDate;
 		this.isDone = isDone;
@@ -30,12 +30,12 @@ public class Client {
 		this.id = id;
 	}
 
-	public String getUsername() {
-		return username;
+	public String getClientName() {
+		return clientName;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
+	public void setClientName(String clientName) {
+		this.clientName = clientName;
 	}
 
 	public String getDescription() {
