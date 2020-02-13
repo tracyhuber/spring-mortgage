@@ -24,6 +24,17 @@ public class ClientHardcodedService {
 		return clients;
 	}
 	
+	public Client save(Client client) {
+		if(client.getId()==-1 || client.getId()==0) {
+			client.setId(++idCounter);
+			clients.add(client);
+		} else {
+			deleteById(client.getId());
+			clients.add(client);
+		}
+		return client;
+	}
+	
 	public Client deleteById(long id) {
 		Client client = findById(id);
 		

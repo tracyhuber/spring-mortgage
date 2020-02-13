@@ -8,6 +8,10 @@ public class Client {
 	private String description;
 	private Date targetDate;
 	private boolean isDone;
+	
+	protected Client() {
+		
+	}
 
 	public Client(long id, String username, String description, Date targetDate, boolean isDone) {
 		super();
