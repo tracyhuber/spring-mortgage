@@ -58,7 +58,7 @@ public class ClientResource {
 	}
 	
 	@PostMapping("/users/{username}/clients")
-	public ResponseEntity<Client> updateClient(
+	public ResponseEntity<Void> updateClient(
 			@PathVariable String username, @RequestBody Client client) {
 		
 		Client createdClient = clientService.save(client);
